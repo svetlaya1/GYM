@@ -53,42 +53,60 @@
         <img class="box-image" src="images/girl.png" alt="girl">
     </div>
    </div>
-   <div class="container-events" id="events">
+   <div class="events">
+    <div class="container-events" id="events">
         <h2 class="events-title">Ближайшие события</h2>
         <div class="events-flex">
             <div class="events-flex-item" id="marafon">
                 <div class="box-event-grad">
                     <div class="box-block">
-                        <p class="event-date">29.06 - 4.07</p>
-                        <h3 class="event-name">Марафон выносливости</h3>
-                        <a href="#"class="events-btn">Участвовать</a>
+                        <div class="box-info">
+                            <p class="event-date">29.06 - 4.07</p>
+                            <h3 class="event-name">Марафон выносливости</h3>
+                            <a href="#"class="events-btn">Участвовать</a>
+                        </div>
                         <p class="events-type">марафон</p>
+                        <a href="#" class="plus-btn">
+                            <img src="/images/plus.svg" alt="take park">
+                        </a>
                     </div>
                 </div>
             </div>
             <div class="events-flex-item" id="vebinar-1">
                 <div class="box-event-grad">
                     <div class="box-block">
-                        <p class="event-date">9.07</p>
-                        <h3 class="event-name">Как стать тренером?</h3>
-                        <a href="#"class="events-btn">Участвовать</a>
+                        <div class="box-info">
+                            <p class="event-date">9.07</p>
+                            <h3 class="event-name">Как стать тренером?</h3>
+                            <a href="#"class="events-btn">Участвовать</a>
+                        </div>
                         <p class="events-type">вебинар</p>
+                        <a href="#" class="plus-btn">
+                            <img src="/images/plus.svg" alt="take park">
+                        </a>
                     </div>
                 </div>
             </div>
             <div class="events-flex-item" id="vebinar-2">
                 <div class="box-event-grad">
                     <div class="box-block">
-                        <p class="event-date">15.07</p>
-                        <h3 class="event-name">Йога, как стиль жизни</h3>
-                        <a href="#"class="events-btn">Участвовать</a>
+                        <div class="box-info">
+                            <p class="event-date">15.07</p>
+                            <h3 class="event-name">Йога, как стиль&nbsp;жизни</h3>
+                            <a href="#"class="events-btn">Участвовать</a>
+                        </div>
                     </div>
                     <p class="events-type">вебинар</p>
+                    <a href="#" class="plus-btn">
+                        <img src="/images/plus.svg" alt="take park">
+                    </a>
                 </div>
             </div>
         </div>
    </div>
-   <div class="grid-container">
+   </div>
+   <div class="timetable-container">
+    <div class="grid-container">
         <div class="grid-header">
             <h2 class="grid-title">Расписание тренировок</h2>
             <h4 class="grid-title-date">22 - 28 июня</h4>
@@ -144,22 +162,25 @@
             </div>
         </div>
    </div>
+   </div>
    <div class="form-container">
         <div class="form-box">
-            <img src="images/Pattern.png" alt="Pattern">
-            <h3 class="form-header">Подпишитесь на рассылку</h3>
-            <form action="">
+            <div class="form-header-box">
+                <img src="images/Pattern.png" alt="Pattern">
+                <h3 class="form-header">Подпишитесь на рассылку</h3>
+            </div>
+            <form class="form-email" action="">
                 <input type="email" placeholder="Ваш e-mail">
+                <div class="agreement">
+                    <input type="checkbox" id="01" class="checkbox">
+                    <label for="01">
+                        <span class="check-text">Согласен с обработкой 
+                            <a class="check-link" href="https://annblok.ru/workshop" target="_blank">персональных данных</a>
+                        </span>
+                    </label>
+                 </div>
                 <button type="submit">Подписаться</button>
              </form>
-             <div class="agreement">
-                <input type="checkbox" id="01" class="checkbox">
-                <label for="01">
-                    <span class="check-text">Согласен с обработкой 
-                        <a class="check-link" href="https://annblok.ru/workshop" target="_blank">персональных данных</a>
-                    </span>
-                </label>
-             </div>
         </div>
    </div>
    <div class="container-about">
@@ -167,7 +188,7 @@
             <div class="about-header">
                 <div class="description">
                     <h2>О компании</h2>
-                    <p>Наша компания является одной из немногих, кто предлагает фитнес услуги онлайн! Оставайтесь с&nbsp;нами и вы сами увидите, что мы проводим не&nbsp;только онлайн-тренировки</p>
+                    <p>Наша компания является одной из немногих, кто предлагает фитнес услуги онлайн! Оставайтесь с&nbsp;нами и вы сами увидите, что мы проводим не&nbsp;только онлайн&#8209;тренировки</p>
                     <button>Записаться</button>
                 </div>   
                 <img src="images/Description-girl.png" alt="Description girl">
