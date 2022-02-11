@@ -144,6 +144,7 @@ h2 {
     background-color: transparent;
     border: 0;
     cursor: pointer;
+    display: block;
 }
 .image-gradient-box {
     max-width: 790px;
