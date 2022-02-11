@@ -184,7 +184,7 @@ h2 {
 /* Блок 3 */
 
 .events {
-    margin-top: 117px;
+    margin-top: 159px;
     margin-bottom: 127px;
 }
 .container-events {
@@ -399,7 +399,7 @@ h2 {
 
 .form-container {
     background: #F3F3F3;
-    margin-bottom: 128px;
+    margin-bottom: 157px;
 }
 .form-box {
     max-width: 645px;
@@ -408,7 +408,7 @@ h2 {
     padding-bottom: 83px;
 }
 .form-header-box {
-    padding-top: 8px;
+    padding-top: 1px;
 }
 .form-box img {
     position: absolute;
@@ -559,15 +559,13 @@ form button {
 /* Блок 6 */
 
 .container-about {
-    margin-bottom: 149px;
+    margin-bottom: 346px;
 }
 .about-box {
     max-width: 1142px;
     margin: 0 auto;
     padding-left: 10px;
     padding-right: 10px;
-}
-.about-header {
     display: flex;
     justify-content: space-between;
 }
@@ -576,6 +574,7 @@ form button {
     font-size: 40px;
     line-height: 125%;
     color: #2B3541;
+    margin-top: 0;
 }
 .description p {
     font-size: 18px;
@@ -601,9 +600,10 @@ form button {
     margin-top: 32px;
 }
 .benefits {
+    position: absolute;
     display: flex;
     justify-content: space-between;
-    margin-top: 57px;
+    margin-top: 195px;
 }
 .benefits-box {
     max-width: 284px;
@@ -706,7 +706,7 @@ form button {
     line-height: 150%;
     color: #2B3541;
     opacity: 0.3;
-    margin: -15px 190px;
+    margin-left: 190px;
 }
 
 /* Modal */
@@ -873,11 +873,15 @@ form button {
         font-size: 14px;
         padding: 17px 30px;
     }
+    .container-about {
+        margin-bottom: 450px;
+    }
     .benefits {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(2, 1fr);
-        gap: 43px;
+        grid-row-gap: 21px;
+        grid-column-gap: 110px;
     }
 }
 @media (min-width: 971px) {
@@ -886,11 +890,29 @@ form button {
     }
 }
 @media (max-width: 970px) {
-    nav {
-        display: none;
-    }
     .header-item {
         max-width: 200px;
+    }
+    .header-item nav {
+        display: none;
+    }
+    .footer-group {
+        flex-direction: column;
+        align-items: flex-end;
+    }
+    .footer-item {
+        width: 100%;
+        max-width: 970px;
+        margin-bottom: 20px;
+    }
+    .footer-title {
+        margin-left: 0;
+        padding-bottom: 8px;
+    }
+}
+@media (max-width: 967px) {
+    .benefits {
+        margin-top: 160px;
     }
 }
 @media (min-width: 943px) {
@@ -985,7 +1007,24 @@ form button {
         left: 0;
         right: auto;
     }
-    
+    .description h2 {
+        font-size: 26px;
+    }
+    .description p {
+        font-size: 16px;
+    }
+    .benefits {
+        grid-row-gap: 14px;
+    }
+    .about-box img {
+        width: 50vw;
+        height: 100%;
+    }
+}
+@media (max-width: 838px) {
+    .benefits {
+        margin-top: 134px;
+    }
 }
 @media (max-width: 786px) {
     .header-logo {
@@ -1008,7 +1047,7 @@ form button {
         height: 22px;
     }
     .form-container {
-        margin-bottom: 62px;
+        margin-bottom: 92px;
     }
     .form-header {
         max-width: 201px;
@@ -1053,6 +1092,54 @@ form button {
         padding-right: 25px;
         margin-left: auto;
         margin-right: auto;
+    }
+    .container-about {
+        margin-bottom: 362px;
+    }
+    .description h2 {
+        margin-bottom: 18px;
+    }
+    .benefits {
+        margin-top: 116px;
+        grid-row-gap: 2px;
+        grid-column-gap: 90px;
+    }
+    .benefits-box h4 {
+        font-size: 16px;
+    }
+    .container-footer {
+        padding-top: 10px;
+        padding-bottom: 38px;
+    }
+    .footer {
+        padding-right: 10px;
+        padding-left: 10px;
+    }
+    .footer-item {
+        margin-bottom: 32px;
+    }
+    .footer-nav {
+        gap: 26px;
+    }
+    .footer-nav a {
+        font-size: 12px;
+    }
+    .form-footer {
+        font-size: 12px;
+        padding-right: 9px;
+    }
+    .pattern {
+        width: 38px;
+        height: 38px;
+        margin-top: 0;
+        margin-left: -18px;
+    }
+    .socials {
+        gap: 25px;
+    }
+    .footer-title {
+        font-size: 10px;
+        margin-top: 23px;
     }
 }
 @media (max-width: 683px) {
@@ -1159,5 +1246,56 @@ form button {
         background-position-x: 80%;
         height: 88vw;
     }
-
+    .form-container {
+        margin-bottom: 60px;
+    }
+    .container-about {
+        padding-left: 10px;
+        padding-right: 10px;
+        margin-bottom: 36px;
+    }
+    .about-box {
+        display: inline;
+    }
+    .benefits {
+        position: static;
+        display: flex;
+        flex-direction: column;
+        margin-top: 0;
+    }
+    .benefits-box h4 {
+        margin-bottom: 14px;
+    }
+    .benefits-box p {
+        margin-top: 0;
+    }
+    .description button {
+        width: 100%;
+        margin-top: 28px;
+        margin-bottom: 40px;
+    }
+    .about-box img {
+        width: 100%
+    }
+    .footer-group {
+        align-items: center;
+    }
+    .footer-item {
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: -5px;
+    }
+    .footer-logo {
+        margin-bottom: 25px;
+    }
+    .footer-nav {
+        gap: 9vw;
+    }
+    .form-footer {
+        padding-right: 28vw;
+    }
+    .footer-title {
+        margin-top: 15px;
+        text-align: center;
+    }
 }
