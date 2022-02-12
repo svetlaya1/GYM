@@ -720,6 +720,9 @@ form button {
     color: #2B3541;
     opacity: 0.3;
     margin-left: 190px;
+    display: flex;
+    justify-content: space-between;
+    max-width: 1141px;
 }
 
 /* Modal */
@@ -1308,6 +1311,7 @@ form button {
         padding-right: 28vw;
     }
     .footer-title {
+        flex-direction: column;
         margin-top: 15px;
         text-align: center;
     }
