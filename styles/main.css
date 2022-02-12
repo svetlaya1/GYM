@@ -1262,6 +1262,9 @@ form button {
         background-position-x: 80%;
         height: 88vw;
     }
+    .grid-about {
+        font-size: 12px;
+    }
     .form-container {
         margin-bottom: 60px;
     }
@@ -1314,5 +1317,17 @@ form button {
         flex-direction: column;
         margin-top: 15px;
         text-align: center;
+    }
+}
+@media (max-width: 368px) {
+    .grid-title {
+        font-size: 22px;
+        max-width: 175px;
+    }
+    .grid-title-date {
+        font-size: 14px;
+    }
+    .grid-name h3 {
+        font-size: 12px;
     }
 }
