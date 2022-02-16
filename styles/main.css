@@ -167,13 +167,13 @@ h2 {
     background: linear-gradient(90deg, #FBF138 0%, rgba(253, 249, 182, 0.45) 145.23%);
     opacity: 0.2;   
     flex-basis: 70%;
-    height: 850px;
+    height: 843px;
 }
 .box-gradient-right {
     background: linear-gradient(90deg, #FDF9B6 0%, rgba(253, 249, 182, 0.7) 166.81%);
     opacity: 0.2;
     flex-basis: 30%;
-    height: 850px;
+    height: 843px;
 }
 .box-image {
     position: absolute;
@@ -639,6 +639,10 @@ form button {
 .container-footer {
     background-color: #F3F3F3;
 }
+.footer {
+    padding-left: 10px;
+    padding-right: 10px;
+}
 .footer-group {
     max-width: 1140px;
     margin: 0 auto;
@@ -719,7 +723,7 @@ form button {
     line-height: 150%;
     color: #2B3541;
     opacity: 0.3;
-    margin-left: 190px;
+    margin: 0 auto;
     display: flex;
     justify-content: space-between;
     max-width: 1141px;
@@ -812,12 +816,49 @@ form button {
 /* Respinsive*/
 
 
+@media (max-width: 1400px) {
+    .image-gradient-box {
+        right: -44px;
+    }
+    .box-image {
+        right: 5px;
+    }
+}
+@media (max-width: 1268px) {
+    .image-gradient-box {
+        max-width: 700px;
+        right: -5px;
+    }
+    .box-gradient-left, .box-gradient-right {
+        height: 752px;
+    }
+}
 @media (max-width: 1200px) {
     .container-header {
         max-width: 1000px;
     }
     .header-item {
         flex-basis: 65.5%;
+    }
+    .bg {
+        max-width: 892px;
+    }
+    .bg-text {
+        padding-top: 116px
+    }
+
+    .box-gradient {
+        max-width: 530px;
+        top: 14px;
+        right: 18px;
+    }
+    .box-gradient-left, .box-gradient-right {
+        height: 512px;
+    }
+    .box-image {
+        right: -80px;
+        top: 54px;
+        width: 82%;
     }
     .grid-container {
         margin-bottom: 95px;
@@ -860,10 +901,22 @@ form button {
         grid-column: 2 / 3;
         grid-row: 3 / 4;
     }
+    .footer-title {
+        margin-left: 0;
+    }
 }
-@media (max-width: 1080px) {
+@media (max-width: 1100px) {
+    .bg {
+        max-width: 890px;
+    }
     .bg-text h1 {
-        font-size: 4vw;
+        font-size: 39px;
+    }
+    .image-gradient-box {
+        right: -7px;
+    }
+    .box-image {
+        right: 31px;
     }
 }
 @media (max-width: 1050px) {
@@ -976,7 +1029,7 @@ form button {
         height: 100%;
     }
     .box-image {
-        top: 100px;
+        top: 115px;
         right: 0;
         width: 110%;
     }
