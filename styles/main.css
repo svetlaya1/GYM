@@ -134,6 +134,7 @@ h2 {
     padding: 20px 30px;
     border: 0;
     box-shadow: 0px 13px 24px rgba(251, 241, 56, 0.3);
+    cursor: pointer;
 }
 .arrow {
     background-image: url(../images/Arrow.svg);
@@ -284,7 +285,6 @@ h2 {
    line-height: 150%;
    text-align: center;
    color: #2B3541;
-   cursor: pointer;
 }
 
 
@@ -339,25 +339,28 @@ h2 {
     box-shadow: 0px 13px 30px rgba(186, 180, 69, 0.2);
     border: none;
 }
+.active .grid-about {
+    display: block;
+}
 .grid-item:nth-child(1) {
     grid-column: 1 / 2;
     grid-row: 1 / 2;
 }
  .grid-item:nth-child(2) {
-    grid-column: 2 / 3;
-    grid-row: 1 / 4;
-}
- .grid-item:nth-child(3) {
-    grid-column: 3 / 4;
-    grid-row: 1 / 3;
-}
- .grid-item:nth-child(4) {
     grid-column: 1 / 2;
     grid-row: 2 / 5;
 }
- .grid-item:nth-child(5) {
+ .grid-item:nth-child(3) {
+    grid-column: 2 / 3;
+    grid-row: 1 / 4;
+}
+ .grid-item:nth-child(4) {
     grid-column: 2 / 3;
     grid-row: 4 / 5;
+}
+ .grid-item:nth-child(5) {
+    grid-column: 3 / 4;
+    grid-row: 1 / 3;
 }
  .grid-item:nth-child(6) {
     grid-column: 3 / 4;
@@ -379,9 +382,9 @@ h2 {
     margin: 0;
     padding-top: 37px;
 }
-.grid-item:hover .grid-name {
+/*.grid-item:hover .grid-name {
     margin-bottom: -16px;
-}
+}*/
 .grid-about {
     max-width: 306px;
     font-size: 18px;
@@ -484,6 +487,7 @@ form button {
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: #2B3541;
+    cursor: pointer;
 }
 .checkbox:checked,
 .checkbox:not(:checked){
@@ -581,6 +585,7 @@ form button {
     padding-right: 10px;
     display: flex;
     justify-content: space-between;
+    gap: 50px;
 }
 .description h2 {
     font-weight: 700;
@@ -608,6 +613,7 @@ form button {
     box-shadow: 0px 13px 24px rgba(251, 241, 56, 0.3);
     border: none;
     margin-top: 16px;
+    cursor: pointer;
 }
 .about-header img {
     margin-top: 32px;
@@ -680,6 +686,19 @@ form button {
     color: #2B3541;
     text-decoration: none;
 }
+.footer-nav a::after {
+    content: '';
+    width: 100%;
+    height: 1.5px;
+    border-radius: 1.5px;
+    background: transparent;
+    display: block;
+}
+.footer-nav a:hover:after {
+    background: #2B3541;
+    opacity: 0.7;
+    transition: 0.2s;
+}
 .socials {
     display: flex;
     align-items: center;
@@ -721,12 +740,17 @@ form button {
 .footer-title {
     font-size: 14px;
     line-height: 150%;
-    color: #2B3541;
-    opacity: 0.3;
+    color: rgba(43, 53, 65, 0.5);
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
     max-width: 1141px;
+}
+.footer-title a {
+    color: rgba(43, 53, 65, 0.5);;
+}
+.footer-title a:hover {
+    color: rgba(43, 53, 65, 1);;
 }
 
 /* Modal */
@@ -815,8 +839,7 @@ form button {
 
 /* Respinsive*/
 
-
-@media (max-width: 1400px) {
+@media (max-width: 1500px) {
     .image-gradient-box {
         right: -44px;
     }
@@ -846,7 +869,9 @@ form button {
     .bg-text {
         padding-top: 116px
     }
-
+    .box-text {
+        margin-bottom: 65px;
+    }
     .box-gradient {
         max-width: 530px;
         top: 14px;
@@ -888,6 +913,7 @@ form button {
     .grid-item:nth-child(3) {
         grid-column: 1 / 2;
         grid-row: 2 / 3;
+
     }
     .grid-item:nth-child(4) {
         grid-column: 2 / 3;
@@ -1223,6 +1249,9 @@ form button {
         height: 19vw;
         padding: 19px 15px;
     }
+    .active {
+        height: 100%;
+    }
     .grid-item:hover {
         height: 200%;
     }
@@ -1240,6 +1269,9 @@ form button {
     .grid-image {
         width: 39px;
         height: 39px;
+    }
+    .grid-about {
+        padding-left: 56px;
     }
 }
 @media (max-width: 600px) {
@@ -1370,6 +1402,16 @@ form button {
         flex-direction: column;
         margin-top: 15px;
         text-align: center;
+    }
+}
+@media (max-width: 420px) {
+    form button {
+        width: 257px;
+    }
+}
+@media (max-width: 397px) {
+    .check-link {
+        padding-left: 22px;
     }
 }
 @media (max-width: 368px) {
