@@ -1068,8 +1068,8 @@ form button {
         margin-top: 160px;
     }
 }
-@media (min-width: 943px) {
-    .plus-btn img {
+@media (min-width: 942px) {
+        .plus-btn img {
         display: none;
     }
 }
@@ -1142,6 +1142,9 @@ form button {
     }
     .box-event-grad:hover .events-btn {
         display: none;
+    }
+    .events-btn {
+        padding: 0;
     }
     .plus-btn {
         position: absolute;
@@ -1560,17 +1563,20 @@ form button {
     }
 }
 @media (max-width: 420px) {
-    form button {
-        width: 257px;
-    }
     .grid-item:nth-child(4):hover .grid-name {
         bottom: -5px;
     }
+    .agreement {
+        padding-right: 0;
+    }
+    form input {
+        width: 260px;
+    }
+    form button {
+        width: 257px;
+    }
 }
 @media (max-width: 397px) {
-    .check-link {
-        padding-left: 22px;
-    }
     .grid-item:nth-child(4):hover .grid-name {
         bottom: -5px;
     }
@@ -1605,6 +1611,11 @@ form button {
         padding-right: 16vw;
     }
 }
+@media (max-width: 348px) {
+    .check-link {
+        padding-left: 21px;
+    }
+}
 @media (max-width: 340px) {
     .footer-nav {
         gap: 6vw;
@@ -1620,5 +1631,12 @@ form button {
     }
     .grid-item:hover {
         height: 31vw;
+    }
+    form {
+        margin-top: 9px;
+    }
+    form input {
+        width: 236px;
+        height: 55px;
     }
 }
