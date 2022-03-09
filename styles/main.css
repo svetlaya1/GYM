@@ -227,6 +227,13 @@ h2 {
    background-position: center;
    position: relative;
 }
+.events-flex-item:hover .box-event-grad {
+    background: linear-gradient(180deg, rgba(251, 241, 56, .6) 0%, rgba(253, 249, 182, 0) 100%);
+ }
+ .events-flex-item:hover .events-btn {
+    visibility: visible;
+    opacity: 1;
+ }
 #marafon {
    background-image: url(../images/Maraphon.png)
 }
@@ -241,13 +248,6 @@ h2 {
    position: absolute;
    width: 100%;
    height: 100%;
-   transition: .3s;
-}
-.box-event-grad:hover {
-   background: linear-gradient(180deg, rgba(251, 241, 56, .6) 0%, rgba(253, 249, 182, 0) 100%);
-}
-.box-event-grad:hover .events-btn {
-   visibility: visible;
 }
 .box-info {
     padding-top: 13px;
@@ -282,6 +282,7 @@ h2 {
    box-shadow: 0px 13px 24px rgba(70, 86, 106, 0.2);
    text-decoration: none;
    padding: 22px 43px;
+   opacity: 0;
    transition: 0.3s;
 }
 .events-type {
